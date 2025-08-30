@@ -77,9 +77,9 @@ Phase 0の詳細な実装計画、設計書、テスト戦略が含まれてい�
 
 ## 参考文献
 
-- **Riak Core**: [`riak_core_gossip.erl`](../../src/riak_core_gossip.erl)
+- **Riak Core**: [`riak_core_gossip.erl`](https://github.com/basho/riak_core/tree/develop/src/riak_core_gossip.erl)
 - **理論**: Demers et al. (1987) "Epidemic algorithms for replicated database maintenance"
-- **研究**: [`research-docs/`](../../research-docs/)の詳細な分析
+- **研究**: [`research-docs/`](https://github.com/basho/riak_core/tree/develop/research-docs/)の詳細な分析
 
 ## 貢献
 
