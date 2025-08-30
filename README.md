@@ -2,6 +2,8 @@
 
 Riak CoreのErlang実装をリファレンスとして、ゴシッププロトコルのコア機能を段階的にGo言語で実装するプロジェクト。
 
+リファレンス実装: [basho/riak_core](https://github.com/basho/riak_core)
+
 ## プロジェクト構成
 
 ```
