@@ -9,16 +9,13 @@ export default [
   {
     ignores: ['dist'],
   },
+  js.configs.recommended,
   {
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
       parser: tsparser,
-      parserOptions: {
-        ecmaVersion: 'latest',
-        sourceType: 'module',
-      },
     },
     plugins: {
       'react-hooks': reactHooks,
@@ -26,6 +23,7 @@ export default [
       '@typescript-eslint': tseslint,
     },
     rules: {
+      ...tseslint.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': [
         'warn',

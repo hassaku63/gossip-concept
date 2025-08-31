@@ -60,7 +60,8 @@ describe('Node', () => {
     it('無効な状態への変更は拒否される', () => {
       const node = new Node('node-1');
       expect(() => {
-        node.setState('Yellow' as any);
+        // @ts-expect-error Testing invalid state
+        node.setState('Yellow');
       }).toThrow('Invalid state: Yellow');
     });
   });

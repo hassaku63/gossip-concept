@@ -8,6 +8,7 @@ afterEach(() => {
 });
 
 // グローバルモックの設定
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 (globalThis as any).ResizeObserver = vi.fn().mockImplementation(() => ({
   observe: vi.fn(),
   unobserve: vi.fn(),
